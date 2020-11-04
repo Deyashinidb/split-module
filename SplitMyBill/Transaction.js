@@ -123,7 +123,7 @@ class Transaction extends Component {
                           <tr key={index}>
                             <td>{item.source}</td>
                             <td>{item.dest}</td>
-                            <td>{item.amount}</td>
+                            <td>{item.amount.toFixed(2)}</td>
                             <td>{!item.done? <CheckBox handleDone={this.handleDone} ind={index}/> : <span>Sorted</span> }</td>
                           </tr>
                       ))}
